@@ -1,5 +1,5 @@
 const { Client, GatewayIntentBits } = require('discord.js');
-const keep_alive = require('./keep_alive.js');
+const { keepAlive } = require('./keep_alive');
 
 const client = new Client({ 
     intents: [
@@ -59,5 +59,4 @@ Recuerda visitar estos canales para estar al tanto del proyecto:
     }
 });
 
-keepAlive();
 client.login(mySecret); // Usar el token obtenido desde los secretos
